@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:../EZWiFiConfigSDK"
+      name = "EZWiFiConfigSDK">
+      <Group
+         location = "group:EZWiFiConfigSDK"
+         name = "EZWiFiConfigSDK">
+         <Group
+            location = "group:waveConfig"
+            name = "waveConfig">
+            <FileRef
+               location = "group:EZWiFiSonicWaveManager.h">
+            </FileRef>
+            <FileRef
+               location = "group:EZWiFiSonicWaveManager.mm">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:deviceSearch"
+            name = "deviceSearch">
+            <FileRef
+               location = "group:EZWiFiLocalDeviceBrowser.mm">
+            </FileRef>
+            <FileRef
+               location = "group:EZWiFiLocalDeviceBrowser.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Category"
+            name = "Category">
+            <FileRef
+               location = "group:EzvizSecurity.m">
+            </FileRef>
+            <FileRef
+               location = "group:EzvizSecurity.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:3rd"
+            name = "3rd">
+            <Group
+               location = "group:openssl"
+               name = "openssl">
+               <FileRef
+                  location = "group:libcrypto.a">
+               </FileRef>
+               <Group
+                  location = "group:include"
+                  name = "include">
+                  <FileRef
+                     location = "group:pem2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pem.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ssl3.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ossl_typ.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dtls1.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:err.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bn.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:blowfish.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cms.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:engine.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:conf_api.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x509.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn1_mac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:kssl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:symhacks.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn1.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:opensslconf.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bio.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rc2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui_compat.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x509v3.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ssl23.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:conf.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md5.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x509_vfy.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:txt_db.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:safestack.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecdsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:objects.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs12.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:crypto.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:opensslv.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs7.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:obj_mac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tmdiff.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:buffer.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ssl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:srp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:camellia.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:evp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:e_os2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md4.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hmac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aes.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:comp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cast.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rc4.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:stack.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:des.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocsp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ec.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecdh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rand.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ts.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pqueue.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dso.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:seed.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:modes.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ssl2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:krb5_asn.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:des_old.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ripemd.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:whrlpool.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tls1.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mdc2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:srtp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn1t.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cmac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ebcdic.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:store.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:idea.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:lhash.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pq_compat.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:libssl.a">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:apConfig"
+            name = "apConfig">
+            <FileRef
+               location = "group:EZApConfigManager.mm">
+            </FileRef>
+            <Group
+               location = "group:EZSimpleAPSDK"
+               name = "EZSimpleAPSDK">
+               <Group
+                  location = "group:HIKCrypto"
+                  name = "HIKCrypto">
+                  <Group
+                     location = "group:include"
+                     name = "include">
+                     <FileRef
+                        location = "group:cry_interface.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:mem_tab.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:hikencrypt.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:vst_defs_public.h">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:SimpleDll.cpp">
+               </FileRef>
+               <FileRef
+                  location = "group:hmac_md5.h">
+               </FileRef>
+               <FileRef
+                  location = "group:ExternalHead.h">
+               </FileRef>
+               <FileRef
+                  location = "group:EZLiteApCfgMgr.mm">
+               </FileRef>
+               <FileRef
+                  location = "group:hmac_md5.c">
+               </FileRef>
+               <FileRef
+                  location = "group:EZLiteApCfgMgr.h">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:EZApConfigManager.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Public"
+            name = "Public">
+            <FileRef
+               location = "group:EZWiFiConfigManager.mm">
+            </FileRef>
+            <FileRef
+               location = "group:EZWiFiConfigManager.h">
+            </FileRef>
+            <FileRef
+               location = "group:EZWiFiConfig.m">
+            </FileRef>
+            <FileRef
+               location = "group:EZWiFiConfig.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:2rd"
+            name = "2rd">
+            <Group
+               location = "group:HCNetSDK"
+               name = "HCNetSDK">
+               <Group
+                  location = "group:include"
+                  name = "include">
+                  <FileRef
+                     location = "group:HCNetSDK.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:libHCCore.a">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:VoiceConfig"
+               name = "VoiceConfig">
+               <FileRef
+                  location = "group:libYS_VoiceMsg.a">
+               </FileRef>
+               <FileRef
+                  location = "group:YS_VoiceMsgEnc_Interface.h">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:SADP"
+               name = "SADP">
+               <FileRef
+                  location = "group:libsadp.a">
+               </FileRef>
+               <FileRef
+                  location = "group:Sadp.h">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:hpr"
+               name = "hpr">
+               <FileRef
+                  location = "group:libhpr.a">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Cond.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Net_Utils.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Timer.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Singleton.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Config.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Semaphore.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_AsyncIOEX.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Netdb.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Sock_Utils.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_IOCompletionQ.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Mutex.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_ThreadPoolFlex.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Addr.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_CycleBuffer.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Inet_Addr.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Thread.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Debug.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Error.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Utils.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_DllSo.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Types.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Event.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Guard.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_AlignMem.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Time.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_FileSystem.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_MsgQ.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Net_Addr.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_SmartPtr.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_AsyncIO.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Select.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Atomic.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_String.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_SimpleIntHash.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_SimpleHash.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_ThreadPool.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Hpr.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HPR_Socket.h">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Log"
+            name = "Log">
+            <FileRef
+               location = "group:EZOpenLog.h">
+            </FileRef>
+            <FileRef
+               location = "group:EZOpenLog.mm">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:bonjour"
+            name = "bonjour">
+            <FileRef
+               location = "group:EZWiFiBonjourBrowser.m">
+            </FileRef>
+            <FileRef
+               location = "group:EZWiFiBonjourBrowser.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:smartConfig"
+            name = "smartConfig">
+            <FileRef
+               location = "group:EZWiFiSimpleWifi.h">
+            </FileRef>
+            <FileRef
+               location = "group:EZWiFiSimpleWifi.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:EZWiFiConfigSDK.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "self:EZWiFiConfigDemo.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--EZWiFiConfig-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="EZWiFiConfig" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFY-9T-VDT">
+                                <rect key="frame" x="40" y="399" width="87" height="30"/>
+                                <state key="normal" title="Smart Confg"/>
+                                <connections>
+                                    <action selector="clickSmartConfigBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ie9-v8-1Ih"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ssid" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qh1-fR-aEu">
+                                <rect key="frame" x="30" y="158" width="354" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OLd-WN-bhX">
+                                <rect key="frame" x="30" y="207" width="354" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="verify code (AP)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEN-ES-0Lk">
+                                <rect key="frame" x="30" y="305" width="354" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvu-Z1-ffI">
+                                <rect key="frame" x="10" y="766" width="394" height="86"/>
+                                <string key="text">Tips:   
+	1. Make sure that the mobile phone and the device are in the same WiFI network environment;
+	2. Please add the hotspot of the device to the AP network configuration mode before performing operation.
+	3. Sonic configuration mode, please turn on iPhone sound.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgM-zV-WNh">
+                                <rect key="frame" x="40" y="359" width="69" height="30"/>
+                                <state key="normal" title="AP Config"/>
+                                <connections>
+                                    <action selector="clickApConfig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Erj-aR-e83"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49w-yp-Ook">
+                                <rect key="frame" x="40" y="439" width="84" height="30"/>
+                                <state key="normal" title="Sonic Confg"/>
+                                <connections>
+                                    <action selector="clickSoundWaveConfig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUG-Ge-YLy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="device serial" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6OH-dJ-Dgw">
+                                <rect key="frame" x="30" y="256" width="354" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qh1-fR-aEu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="0Lw-d7-SsW"/>
+                            <constraint firstItem="YFY-9T-VDT" firstAttribute="top" secondItem="DgM-zV-WNh" secondAttribute="bottom" constant="10" id="4tC-To-lQq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qh1-fR-aEu" secondAttribute="trailing" constant="30" id="5dG-bj-QAj"/>
+                            <constraint firstItem="6OH-dJ-Dgw" firstAttribute="top" secondItem="OLd-WN-bhX" secondAttribute="bottom" constant="15" id="P4P-l9-WIX"/>
+                            <constraint firstItem="eEN-ES-0Lk" firstAttribute="leading" secondItem="qh1-fR-aEu" secondAttribute="leading" id="Ql9-uB-FPc"/>
+                            <constraint firstItem="49w-yp-Ook" firstAttribute="leading" secondItem="DgM-zV-WNh" secondAttribute="leading" id="Qov-ki-eqV"/>
+                            <constraint firstItem="Rvu-Z1-ffI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="RXa-pL-jEl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DgM-zV-WNh" secondAttribute="trailing" symbolic="YES" id="SDY-61-L9p"/>
+                            <constraint firstItem="OLd-WN-bhX" firstAttribute="top" secondItem="qh1-fR-aEu" secondAttribute="bottom" constant="15" id="TZY-Gq-plF"/>
+                            <constraint firstAttribute="trailing" secondItem="Rvu-Z1-ffI" secondAttribute="trailing" constant="10" id="UZa-bv-j2b"/>
+                            <constraint firstItem="YFY-9T-VDT" firstAttribute="leading" secondItem="DgM-zV-WNh" secondAttribute="leading" id="Vy9-fN-RRj"/>
+                            <constraint firstItem="6OH-dJ-Dgw" firstAttribute="trailing" secondItem="OLd-WN-bhX" secondAttribute="trailing" id="WdO-lW-tHg"/>
+                            <constraint firstItem="49w-yp-Ook" firstAttribute="top" secondItem="YFY-9T-VDT" secondAttribute="bottom" constant="10" id="dSI-FI-nXR"/>
+                            <constraint firstItem="eEN-ES-0Lk" firstAttribute="trailing" secondItem="qh1-fR-aEu" secondAttribute="trailing" id="eN0-mY-wCz"/>
+                            <constraint firstItem="DgM-zV-WNh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="gvt-DA-PWb"/>
+                            <constraint firstItem="OLd-WN-bhX" firstAttribute="leading" secondItem="qh1-fR-aEu" secondAttribute="leading" id="inB-Nu-qnT"/>
+                            <constraint firstItem="OLd-WN-bhX" firstAttribute="trailing" secondItem="qh1-fR-aEu" secondAttribute="trailing" id="oTk-Qm-RLx"/>
+                            <constraint firstItem="eEN-ES-0Lk" firstAttribute="top" secondItem="6OH-dJ-Dgw" secondAttribute="bottom" constant="15" id="oks-kd-bBB"/>
+                            <constraint firstItem="6OH-dJ-Dgw" firstAttribute="leading" secondItem="OLd-WN-bhX" secondAttribute="leading" id="vqZ-cS-QEL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rvu-Z1-ffI" secondAttribute="bottom" constant="10" id="wBN-Qw-mYF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="49w-yp-Ook" secondAttribute="trailing" symbolic="YES" id="wGd-wU-AMa"/>
+                            <constraint firstItem="qh1-fR-aEu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="wsP-rC-8Xl"/>
+                            <constraint firstItem="DgM-zV-WNh" firstAttribute="top" secondItem="eEN-ES-0Lk" secondAttribute="bottom" constant="20" id="zlu-uB-ehl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YFY-9T-VDT" secondAttribute="trailing" symbolic="YES" id="zmA-jK-sdS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="apConfigBtn" destination="DgM-zV-WNh" id="Imi-bx-XUn"/>
+                        <outlet property="deviceSerial" destination="6OH-dJ-Dgw" id="3BA-Gq-O0u"/>
+                        <outlet property="password" destination="OLd-WN-bhX" id="hqg-Y8-SCX"/>
+                        <outlet property="smartConfgBtn" destination="YFY-9T-VDT" id="6hh-Hg-qtA"/>
+                        <outlet property="soundWaveConfigBtn" destination="49w-yp-Ook" id="tLC-uV-3oH"/>
+                        <outlet property="ssid" destination="qh1-fR-aEu" id="sE7-yR-T6G"/>
+                        <outlet property="verifyCode" destination="eEN-ES-0Lk" id="OYv-aL-LfY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430.43478260869568" y="-3.3482142857142856"/>
+        </scene>
+    </scenes>
+</document>
