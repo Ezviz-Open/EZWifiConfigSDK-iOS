@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C437D416246533440012D982 /* libEZWiFiConfigSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C437D415246533440012D982 /* libEZWiFiConfigSDK.a */; };
 		C437D41A246533B40012D982 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4ACECDF2456785B008CD334 /* libiconv.2.4.0.tbd */; };
 		C437D5BD24653BB20012D982 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C437D56B24653BB20012D982 /* libcrypto.a */; };
 		C437D5BE24653BB20012D982 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C437D5BC24653BB20012D982 /* libssl.a */; };
@@ -15,6 +14,7 @@
 		C437D5C02465496A0012D982 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4ACEBB124556E85008CD334 /* AVFoundation.framework */; };
 		C437D62B246B96DE0012D982 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C437D62A246B96DE0012D982 /* NetworkExtension.framework */; };
 		C461F74324595AE900F9E796 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = C461F74224595AE900F9E796 /* UIView+Toast.m */; };
+		C47DC30924D04FD40070A7ED /* libEZWiFiConfigSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47DC30824D04FD40070A7ED /* libEZWiFiConfigSDK.a */; };
 		C4ACEB89245566ED008CD334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ACEB88245566ED008CD334 /* AppDelegate.m */; };
 		C4ACEB8C245566ED008CD334 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ACEB8B245566ED008CD334 /* SceneDelegate.m */; };
 		C4ACEB8F245566ED008CD334 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ACEB8E245566ED008CD334 /* ViewController.m */; };
@@ -113,6 +113,10 @@
 		C461F74224595AE900F9E796 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		C461F74424595D7000F9E796 /* EZWiFiConfigDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EZWiFiConfigDemo.entitlements; sourceTree = "<group>"; };
 		C461F74524595D7600F9E796 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		C46DAB0B24D2B223006BB74C /* EZConfigTokenInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EZConfigTokenInfo.h; path = EZWiFiConfigSDK/EZWiFiConfigSDK/NewAPConfig/Model/EZConfigTokenInfo.h; sourceTree = SOURCE_ROOT; };
+		C47DC30824D04FD40070A7ED /* libEZWiFiConfigSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEZWiFiConfigSDK.a; path = "../../../Library/Developer/Xcode/DerivedData/EZWiFiConfigSDKDemo-acflovifmojpemftcjpifeqzjzja/Build/Products/Debug-iphoneos/libEZWiFiConfigSDK.a"; sourceTree = "<group>"; };
+		C47DC30E24D277620070A7ED /* EZAPDevInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZAPDevInfo.h; sourceTree = "<group>"; };
+		C47DC30F24D277620070A7ED /* EZWiFiItemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZWiFiItemInfo.h; sourceTree = "<group>"; };
 		C4ACEB84245566ED008CD334 /* EZWiFiConfigDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZWiFiConfigDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4ACEB87245566ED008CD334 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4ACEB88245566ED008CD334 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,8 +149,8 @@
 				C437D5BF2465495B0012D982 /* libc++.tbd in Frameworks */,
 				C437D41A246533B40012D982 /* libiconv.2.4.0.tbd in Frameworks */,
 				C437D5BE24653BB20012D982 /* libssl.a in Frameworks */,
+				C47DC30924D04FD40070A7ED /* libEZWiFiConfigSDK.a in Frameworks */,
 				C437D5BD24653BB20012D982 /* libcrypto.a in Frameworks */,
-				C437D416246533440012D982 /* libEZWiFiConfigSDK.a in Frameworks */,
 				C437D62B246B96DE0012D982 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +171,7 @@
 		C437D413246533440012D982 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				C47DC30D24D277620070A7ED /* model */,
 				C437D414246533440012D982 /* EZWiFiConfigManager.h */,
 			);
 			path = include;
@@ -277,6 +282,16 @@
 			path = Toast;
 			sourceTree = "<group>";
 		};
+		C47DC30D24D277620070A7ED /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C46DAB0B24D2B223006BB74C /* EZConfigTokenInfo.h */,
+				C47DC30E24D277620070A7ED /* EZAPDevInfo.h */,
+				C47DC30F24D277620070A7ED /* EZWiFiItemInfo.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		C4ACEB7B245566ED008CD334 = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +333,7 @@
 		C4ACEBB024556E85008CD334 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C47DC30824D04FD40070A7ED /* libEZWiFiConfigSDK.a */,
 				C437D62A246B96DE0012D982 /* NetworkExtension.framework */,
 				C461F74524595D7600F9E796 /* ExternalAccessory.framework */,
 				C4ACED0D24567D41008CD334 /* libz.tbd */,
@@ -548,11 +564,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EZWiFiConfigDemo/EZWiFiConfigDemo.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SRN4RNBX5L;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include",
+					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include/model",
+				);
 				INFOPLIST_FILE = EZWiFiConfigDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -564,9 +583,10 @@
 					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK",
 					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/openssl",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = smartLife_develop;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -576,11 +596,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EZWiFiConfigDemo/EZWiFiConfigDemo.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SRN4RNBX5L;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include",
+					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include/model",
+				);
 				INFOPLIST_FILE = EZWiFiConfigDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -592,9 +615,10 @@
 					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK",
 					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/openssl",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = smartLife_develop;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
