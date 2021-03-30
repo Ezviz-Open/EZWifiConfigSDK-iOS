@@ -12,10 +12,10 @@
 #import "UIView+Toast.h"
 
 
-#define SSID          @"hbj044"  //ezvz_test
-#define PWD           @"123456789"  //test123+
-#define DeviceSeiral  @"759612082" //759612082 C37988520
-#define VerifyCode    @"WAFDZJ" //ZALAQX WAFDZJ
+#define SSID          @"ezviz_test"  //ezviz_test
+#define PWD           @"test123+"  //test123+
+#define DeviceSeiral  @"759612082" //759612082 C37988520 E29713677
+#define VerifyCode    @"ZALAQX" //ZALAQX WAFDZJ LMVRGM
 #define AccessToken   @"at.6qmsx56v8yyuiyum2o61cgnu07tl5ada-67vwenjlu9-0bj7rdz-uynfozxlb"  //at.d4ruomhfduevc70say0cm5kj6hn1blzl-86s34gejzm-1ftsqzp-dskra0qvg  at.6qmsx56v8yyuiyum2o61cgnu07tl5ada-67vwenjlu9-0bj7rdz-uynfozxlb
 #define ApiUrl        @"https://open.ys7.com"  //https://iusopen.ezvizlife.com  https://open.ys7.com
 

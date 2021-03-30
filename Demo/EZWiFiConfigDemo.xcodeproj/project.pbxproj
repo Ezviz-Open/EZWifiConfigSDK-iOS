@@ -14,6 +14,7 @@
 		C437D5C02465496A0012D982 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4ACEBB124556E85008CD334 /* AVFoundation.framework */; };
 		C437D62B246B96DE0012D982 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C437D62A246B96DE0012D982 /* NetworkExtension.framework */; };
 		C461F74324595AE900F9E796 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = C461F74224595AE900F9E796 /* UIView+Toast.m */; };
+		C46CF6B524E4C1D4003BA048 /* libEZWiFiConfigSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C437D415246533440012D982 /* libEZWiFiConfigSDK.a */; };
 		C47DC30924D04FD40070A7ED /* libEZWiFiConfigSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47DC30824D04FD40070A7ED /* libEZWiFiConfigSDK.a */; };
 		C4ACEB89245566ED008CD334 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ACEB88245566ED008CD334 /* AppDelegate.m */; };
 		C4ACEB8C245566ED008CD334 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ACEB8B245566ED008CD334 /* SceneDelegate.m */; };
@@ -145,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46CF6B524E4C1D4003BA048 /* libEZWiFiConfigSDK.a in Frameworks */,
 				C437D5C02465496A0012D982 /* AVFoundation.framework in Frameworks */,
 				C437D5BF2465495B0012D982 /* libc++.tbd in Frameworks */,
 				C437D41A246533B40012D982 /* libiconv.2.4.0.tbd in Frameworks */,
@@ -564,13 +566,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EZWiFiConfigDemo/EZWiFiConfigDemo.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SRN4RNBX5L;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include",
 					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include/model",
+					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include",
 				);
 				INFOPLIST_FILE = EZWiFiConfigDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -586,7 +588,7 @@
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = smartLife_develop;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -596,13 +598,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EZWiFiConfigDemo/EZWiFiConfigDemo.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = SRN4RNBX5L;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include",
 					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include/model",
+					"$(PROJECT_DIR)/EZWiFiConfigDemo/WiFiSDK/include",
 				);
 				INFOPLIST_FILE = EZWiFiConfigDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -618,7 +620,7 @@
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezviz.smartLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = smartLife_develop;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
