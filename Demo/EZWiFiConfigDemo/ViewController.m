@@ -54,6 +54,12 @@
         _locationmanager = [[CLLocationManager alloc]init];
         [_locationmanager requestWhenInUseAuthorization];
     }
+    
+    self.ssid.text = @"Ezviz_Redmi_2.4G";
+    self.password.text = @"TEST1234";
+    self.deviceSerial.text = @"F04606611";
+    self.verifyCode.text = @"IYQBKF";
+    
 }
 
 - (IBAction)clickApConfig:(id)sender
@@ -63,7 +69,7 @@
     
     [[EZWiFiConfigManager sharedInstance] setApiUrl:self.apiUrl.text.length > 0 ? self.apiUrl.text : ApiUrl];
     [[EZWiFiConfigManager sharedInstance] setAccessToken:self.accessToken.text.length > 0 ? self.accessToken.text : AccessToken];
-    
+
     __weak typeof(self) weakSelf = self;
     [[EZWiFiConfigManager sharedInstance] startAPWifiConfigWithWifiName:self.ssid.text.length>0?self.ssid.text:SSID
                                                                 wifiPwd:self.password.text.length>0?self.password.text:PWD
@@ -84,6 +90,13 @@
             {
                 NSLog(@"Wi-Fi连接中...");
                 [weakSelf.view makeToast:[NSString stringWithFormat:@"Wi-Fi连接中..."] duration:2.0 position:CSToastPositionCenter];
+            }
+                break;
+            case EZWifiConfigWifiInfoSent:
+            {
+                NSString * const tip = @"已成功发送WiFi信息到设备，如果WiFi信息正确，设备将连上WiFi并注册上平台";
+                NSLog(tip);
+                [weakSelf.view makeToast:[NSString stringWithFormat:tip] duration:2.0 position:CSToastPositionCenter];
             }
                 break;
             case EZWifiConfigRegistered:

@@ -21,8 +21,9 @@ typedef NS_ENUM(NSInteger, EZWifiConfigStatus)
 {
     EZWifiConfigConnecting,   //设备正在连接WiFi
     EZWifiConfigConnected,    //设备连接WiFi成功  （已废弃）
-    EZWifiConfigRegistered,   //设备注册平台成功
+    EZWifiConfigRegistered,   //设备注册平台成功，如果AP配网时传入accessToken，则AP配网的成功消息为这个
     EZWifiConfigFailed,       //设备配网失败
+    EZWifiConfigWifiInfoSent, //如果AP配网时不传入accesstoken，则AP配网的成功消息为这个【已向设备成功发送WiFi信息】
 };
 
 /* New AP配网设备状态 */
